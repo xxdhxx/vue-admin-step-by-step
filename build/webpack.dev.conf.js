@@ -18,7 +18,7 @@ const jsonServer = require('json-server')
 /*搭建一个server*/
 const apiJsonServer = jsonServer.create()
 /*将db.json关联到server*/
-const apiRouter = jsonServer.router('db.json')
+const apiRouter = jsonServer.router('api-server/db.json')
 const jsonWares = jsonServer.defaults()
 //全局使用
 apiJsonServer.use(jsonWares)

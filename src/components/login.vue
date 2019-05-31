@@ -30,7 +30,7 @@
 					<el-tab-pane label="帅哥登录" name="second">长得很帅</el-tab-pane>
 				</el-tabs>
 			</div>
-			
+
 		</div>
 	</div>
 </template>
@@ -65,6 +65,10 @@
 		},
 		methods: {
 			login () {
+			  var data=new Object();
+			  data.name='potato';
+			  this.post('',data);
+//			  https://weimishanghao.com/a/rest
 //			 先触发页面中的检验规则,不通过给提示,通过就向后台发送请求,
 //           $refs是vue中获取页面的,在html中要写 ref="form"
 		     this.$refs.form.validate(async (valid) => {
@@ -96,7 +100,7 @@
 </script>
 <!--使用less-->
 <style lang="less">
-	
+
 	#login {
 		width: 100%;
 		height: 100%;
@@ -138,13 +142,13 @@
 			height:350px;
 			.el-tabs__item {
 				padding: inherit !important;
-				
+
 			}
-			
+
 			 #tab-second {
 				width: 125px !important;
 			}
-			
+
 			 #tab-first {
 				width: 125px !important;
 			}

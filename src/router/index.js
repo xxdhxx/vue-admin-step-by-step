@@ -64,15 +64,15 @@ const router = new Router({
 	]
 });
 // 给router配置导航守卫
-// to: 去哪儿
-// from: from 哪儿来
-// next() :  next()：放行   next('/login') 去login组件
-// 在登录成功以后，将 token 存储到 localStorage 中
-// 在 导航守卫 中先判断当前访问的页面是不是登录页面
-// 如果是登录页面，直接放行（next()）
-// 如果不是登录页面，就从 localStorage 中获取 token，判断有没有登录
-// 如果登录了，直接放行（next()）
-// 如果没有登录，就跳转到登录页面让用户登录（next('/login')
+// // to: 去哪儿
+// // from: from 哪儿来
+// // next() :  next()：放行   next('/login') 去login组件
+// // 在登录成功以后，将 token 存储到 localStorage 中
+// // 在 导航守卫 中先判断当前访问的页面是不是登录页面
+// // 如果是登录页面，直接放行（next()）
+// // 如果不是登录页面，就从 localStorage 中获取 token，判断有没有登录
+// // 如果登录了，直接放行（next()）
+// // 如果没有登录，就跳转到登录页面让用户登录（next('/login')
 router.beforeEach((to, from, next) => {
 //	开启进度条
 	NProgress.start()
@@ -84,7 +84,7 @@ router.beforeEach((to, from, next) => {
 	}else {
 		next('/login')
 	}
-	
+
 });
 router.afterEach(() => {
 //	关闭进度条
