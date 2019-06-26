@@ -14,17 +14,17 @@
 						<el-row :gutter="20">
 							<el-col :span="8">
 								<div class="accountB Aboder">
-									
+
 								</div>
 							</el-col>
 							<el-col :span="8">
 								<div class="messageB Aboder">
-									
+
 								</div>
 							</el-col>
 							<el-col :span="8">
 								<div class="surplusB Aboder">
-									
+
 								</div>
 							</el-col>
 						</el-row>
@@ -44,22 +44,22 @@
 						<el-row :gutter="20">
 							<el-col :span="6">
 								<div class="count-t Aboder">
-									
+
 								</div>
 							</el-col>
 							<el-col :span="6">
 								<div class="count-w Aboder">
-									
+
 								</div>
 							</el-col>
 							<el-col :span="6">
 								<div class="count-m Aboder">
-									
+
 								</div>
 							</el-col>
 							<el-col :span="6">
 								<div class="count-totle Aboder-l">
-									
+
 								</div>
 							</el-col>
 						</el-row>
@@ -82,7 +82,7 @@
 			</el-col>
 
 		</el-row>
-		
+
 	</div>
 </template>
 
@@ -122,8 +122,8 @@
 						axisLine: {
 							symbol: ['none', 'arrow'],
 							lineStyle: {
-								color: 'rgba(212,212,212,1)', // x坐标轴的轴线颜色 
-								width: 1 //这里是坐标轴的宽度,为0就是不显示 
+								color: 'rgba(212,212,212,1)', // x坐标轴的轴线颜色
+								width: 1 //这里是坐标轴的宽度,为0就是不显示
 							}
 						}
 					},
@@ -131,19 +131,19 @@
 
 						type: 'value',
 						axisLabel: {
-							show: false //这行代码控制着坐标轴x轴的文字是否显示 
+							show: false //这行代码控制着坐标轴x轴的文字是否显示
 						},
 						splitLine: {
-							show: false, // 网格线是否显示 
-							// 改变样式 
+							show: false, // 网格线是否显示
+							// 改变样式
 							lineStyle: {
-								color: '#EDEDED' // 修改网格线颜色 
+								color: '#EDEDED' // 修改网格线颜色
 							}
 						},
 						axisLine: {
 							lineStyle: {
-								color: '#fff', // x坐标轴的轴线颜色 
-								width: 0 //这里是坐标轴的宽度,为0就是不显示 
+								color: '#fff', // x坐标轴的轴线颜色
+								width: 0 //这里是坐标轴的宽度,为0就是不显示
 							}
 						}
 					}],
@@ -206,29 +206,29 @@
 						axisLine: {
 							symbol: ['none', 'arrow'],
 							lineStyle: {
-								color: 'rgba(212,212,212,1)', // x坐标轴的轴线颜色 
-								width: 1 //这里是坐标轴的宽度,为0就是不显示 
+								color: 'rgba(212,212,212,1)', // x坐标轴的轴线颜色
+								width: 1 //这里是坐标轴的宽度,为0就是不显示
 							}
 						}
 					},
 					yAxis: [{
 						type: 'value',
 						axisLabel: {
-							show: true //这行代码控制着坐标轴x轴的文字是否显示 
+							show: true //这行代码控制着坐标轴x轴的文字是否显示
 						},
 
 						splitLine: {
-							show: true, // 网格线是否显示 
-							// 改变样式 
+							show: true, // 网格线是否显示
+							// 改变样式
 							lineStyle: {
-								color: 'rgba(212,212,212,1)', // 修改网格线颜色 
+								color: 'rgba(212,212,212,1)', // 修改网格线颜色
 
 							}
 						},
 						axisLine: {
 							lineStyle: {
-								color: 'rgba(212,212,212,1)', // x坐标轴的轴线颜色 
-								width: 0 //这里是坐标轴的宽度,为0就是不显示 
+								color: 'rgba(212,212,212,1)', // x坐标轴的轴线颜色
+								width: 0 //这里是坐标轴的宽度,为0就是不显示
 							}
 						}
 					}],
@@ -237,8 +237,8 @@
 							type: 'line',
 							smooth: true,
 							lineStyle: {
-								color: 'rgba(89,191,218,1)', // x坐标轴的轴线颜色 
-								width: 3 //这里是坐标轴的宽度,为0就是不显示 
+								color: 'rgba(89,191,218,1)', // x坐标轴的轴线颜色
+								width: 3 //这里是坐标轴的宽度,为0就是不显示
 							},
 							data: [0.2, 0.3, 0.6, 0.4, 0.5]
 						},
@@ -301,12 +301,12 @@
 			font-size: 18px !important;
 		}
 	}
-	
-	
+
+
 	.el-col-6 {
 		padding: 0 !important;
 	}
-	
+
     .el-row {
 		margin-bottom: 30px;
 	}
@@ -358,7 +358,7 @@
 				color: rgba(51, 51, 51, 1);
 				margin-bottom: 10px;
 			}
-	
+
 		}
 		.messageB {
 			.messageAccout {
@@ -368,7 +368,7 @@
 				font-weight: 400;
 				color: rgba(51, 51, 51, 1);
 				margin-bottom: 10px;
-			}	
+			}
 		}
 		.surplusB {
 			.surplusAccout {

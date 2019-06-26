@@ -16,11 +16,21 @@ import echarts from 'echarts'
 // 导入axios
 import axios from 'axios'
 import Qs from 'qs'
+
+//引入gooFlow
+// import * as test from "./assets/GooFlow/js/json.js"
+// import "./assets/GooFlow/css/iconfont.css"
+// import "./assets/GooFlow/css/styleGoo.css"
+// Vue.prototype.test = function () {
+//   test.testB();
+// };
+
 // 把echarts对象绑定到Vue原型中全局使用
 Vue.prototype.$echarts = echarts
 // 把axios对象绑定到Vue原型中全局使用
 Vue.prototype.axios = axios
 //封装全局header处理
+var domain='https://weimishanghao.com/a/rest';
 Vue.prototype.post = function (url, data) {
   axios({
     headers: {
@@ -28,7 +38,7 @@ Vue.prototype.post = function (url, data) {
       'X-Token': localStorage.getItem('myToken')
     },
     method: 'post',
-    url: 'https://weimishanghao.com/a/rest',
+    url: domain+url,
     data: Qs.stringify(data)
   }).then(function (response) {
     /*console.log(response);*/

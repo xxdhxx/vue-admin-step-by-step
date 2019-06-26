@@ -34,7 +34,7 @@
 				          <!-- el-menu-item：子菜单中的每一项 -->
 				          <!-- unique-opened: 保证只能打开一个子菜单 -->
 				          <!-- router: 如果router为true，那么index就会作为路由的连接 -->
-				          
+
 						<el-menu :unique-opened='true' :router="true" text-color="#ffffff" active-text-color="#cccccc">
 							<el-submenu index="1">
 								<template slot="title"><i class="iconfont icon-shouye"></i>
@@ -43,18 +43,19 @@
 									</span>
 								</template>
 							</el-submenu>
-						
+
 							<el-submenu index="2">
 								<template slot="title"><i class="iconfont icon-message-channel"></i>table</template>
 								<el-menu-item-group>
 									<el-menu-item index="/table">table</el-menu-item>
+                  <el-menu-item index="/test">testGooFlow</el-menu-item>
 								</el-menu-item-group>
 							</el-submenu>
 							<!--<el-submenu index="3">
 								<template slot="title"><i class="iconfont icon-caiwu"></i>财值</template>
 								<el-menu-item-group>
 									<el-menu-item index="/FinancialOV">财览</el-menu-item>
-									
+
 								</el-menu-item-group>
 							</el-submenu>-->-->
 
@@ -73,7 +74,7 @@
 			              <router-view v-if="$route.meta.keepAlive">
 			              </router-view>
 			             </keep-alive>
-			
+
 			          <!-- 这里是不被缓存的视图组件 -->
 			          <router-view v-if="!$route.meta.keepAlive">
 			          </router-view>
@@ -108,7 +109,7 @@
 //				退出成功提示
 				this.$message.success('退出成功了')
 			},
-			
+
 		},
 	}
 </script>
@@ -192,7 +193,7 @@
     @media only screen and (max-width: 1400px){
     	.el-main {
     		padding: 20px;
-    		
+
     	}
     }
 	.el-submenu__title i {

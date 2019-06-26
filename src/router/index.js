@@ -15,6 +15,8 @@ const Home = () => import(/* webpackChunkName: "home" */ '@/components/home')
 const Login = () => import(/* webpackChunkName: "login" */ '@/components/login')
 //引入table组件
 const Table = () => import(/* webpackChunkName: "table" */ '@/components/table/table')
+//引入ceshi组件
+const Ceshi = () => import(/* webpackChunkName: "table" */ '@/components/test/test')
 //引入homeMain组件
 const HomeMain = () => import(/* webpackChunkName: "HomeMain" */ '@/components/HomeMain')
 
@@ -58,7 +60,12 @@ const router = new Router({
 					path: '/table',
 					name: 'table',
 					component:Table
-				}
+				},
+        {
+          path: '/test',
+          name: 'test',
+          component:Ceshi
+        }
 			]
 		}
 	]
